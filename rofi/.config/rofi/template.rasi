@@ -12,7 +12,7 @@
     spacing:    0px;
 }
 configuration {
-modi: "drun,games,window,run,ssh,combi,keys,filebrowser,recursivebrowser";
+modi: "drun,window,run,ssh,combi,keys,filebrowser,recursivebrowser";
 }
 
 window {
