@@ -1,0 +1,14 @@
+#!/bin/bash
+dir="/home/toby/Pictures/Screenshots"
+time=$(date "+%d-%b_%H-%M-%S")
+file="$dir/${time}.png"
+
+area=$(slurp)
+[[ -z "$area" ]] && exit 1  # Exit if selection canceled
+
+# Take screenshot and save
+grim -g "$area" "$file"
+
+# Copy to clipboard
+wl-copy < "$file"
+
